@@ -1,4 +1,4 @@
-package org.test;
+package org.reqres;
 
 import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.given;
@@ -41,7 +41,6 @@ public class ReqResGet {
 		Assert.assertEquals(response.getStatusCode(), 404);
 		Object object = response.jsonPath().get();
 		Assert.assertEquals(object.toString(), "{}");
-//		given().get("users/23").then().statusCode(404).body("", equalTo("{}"));
 	}
 
 	@Test
@@ -59,6 +58,7 @@ public class ReqResGet {
 		Object object = response.jsonPath().get("data.year");
 		Assert.assertEquals(object.toString(), "2001");
 	}
+
 	@Test
 	public void singleResourceNotFound() {
 		response = RestAssured.given().get("unknown/23");
@@ -66,4 +66,13 @@ public class ReqResGet {
 		Object object = response.jsonPath().get();
 		Assert.assertEquals(object.toString(), "{}");
 	}
+
+	@Test
+	public void delayedResponse() {
+		response = RestAssured.given().get("users?delay=3");
+		Assert.assertEquals(response.getStatusCode(), 200);
+		List<Object> list = response.jsonPath().getList("data.first_name");
+		Assert.assertEquals(list.contains("Emma"), true);
+	}
+
 }

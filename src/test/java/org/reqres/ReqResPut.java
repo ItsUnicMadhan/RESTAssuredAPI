@@ -1,4 +1,4 @@
-package org.test;
+package org.reqres;
 
 import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.given;
@@ -20,11 +20,10 @@ public class ReqResPut {
 	@Test
 	public void testPut() {
 		request.put("name", "Madhan");
-		request.put("job", "Software Engineer");
+		request.put("job", "Senior Software Engineer");
 
-		baseURI = "https://reqres.in/api";
 		given().header("Content-Type", "application/json").contentType(ContentType.JSON).accept(ContentType.JSON)
-				.body(request.toJSONString()).when().put("/users/2").then().statusCode(200).log().all();
+				.body(request.toJSONString()).when().put("users/2").then().statusCode(200).log().all();
 	}
 
 }

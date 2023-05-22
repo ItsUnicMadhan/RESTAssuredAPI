@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ReqResSuite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="org.reqres.ReqResPatch"/>
+      <class name="org.reqres.ReqResPut"/>
+      <class name="org.reqres.ReqResGet"/>
+      <class name="org.reqres.ReqResDelete"/>
+      <class name="org.reqres.ReqResPost"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- ReqResSuite -->

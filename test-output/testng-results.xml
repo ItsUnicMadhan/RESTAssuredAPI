@@ -1,53 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-22T11:46:58 IST" name="Default suite" finished-at="2023-05-22T11:47:07 IST" duration-ms="8266">
+  <suite started-at="2023-05-22T17:12:25 IST" name="ReqResSuite" finished-at="2023-05-22T17:12:50 IST" duration-ms="25336">
     <groups>
     </groups>
-    <test started-at="2023-05-22T11:46:58 IST" name="Default test" finished-at="2023-05-22T11:47:07 IST" duration-ms="8266">
-      <class name="org.test.ReqResPost">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:org.test.ReqResPost@4d9e68d0]" started-at="2023-05-22T11:46:58 IST" name="beforeMethod" finished-at="2023-05-22T11:46:59 IST" duration-ms="783" status="PASS">
+    <test started-at="2023-05-22T17:12:25 IST" name="Test" finished-at="2023-05-22T17:12:50 IST" duration-ms="25336">
+      <class name="org.reqres.ReqResDelete">
+        <test-method signature="delete()[pri:0, instance:org.reqres.ReqResDelete@38c6f217]" started-at="2023-05-22T17:12:47 IST" name="delete" finished-at="2023-05-22T17:12:47 IST" duration-ms="466" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delete -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:org.reqres.ReqResDelete@38c6f217]" started-at="2023-05-22T17:12:47 IST" name="beforeMethod" finished-at="2023-05-22T17:12:47 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="create()[pri:0, instance:org.test.ReqResPost@4d9e68d0]" started-at="2023-05-22T11:46:59 IST" name="create" finished-at="2023-05-22T11:47:04 IST" duration-ms="5255" status="PASS">
+      </class> <!-- org.reqres.ReqResDelete -->
+      <class name="org.reqres.ReqResGet">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:org.reqres.ReqResGet@399f45b1]" started-at="2023-05-22T17:12:37 IST" name="beforeMethod" finished-at="2023-05-22T17:12:37 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="SingleResource()[pri:0, instance:org.reqres.ReqResGet@399f45b1]" started-at="2023-05-22T17:12:37 IST" name="SingleResource" finished-at="2023-05-22T17:12:41 IST" duration-ms="3660" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SingleResource -->
+        <test-method signature="delayedResponse()[pri:0, instance:org.reqres.ReqResGet@399f45b1]" started-at="2023-05-22T17:12:41 IST" name="delayedResponse" finished-at="2023-05-22T17:12:45 IST" duration-ms="3888" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delayedResponse -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:org.reqres.ReqResGet@399f45b1]" started-at="2023-05-22T17:12:41 IST" name="beforeMethod" finished-at="2023-05-22T17:12:41 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="listOfResource()[pri:0, instance:org.reqres.ReqResGet@399f45b1]" started-at="2023-05-22T17:12:45 IST" name="listOfResource" finished-at="2023-05-22T17:12:45 IST" duration-ms="259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- listOfResource -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:org.reqres.ReqResGet@399f45b1]" started-at="2023-05-22T17:12:45 IST" name="beforeMethod" finished-at="2023-05-22T17:12:45 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:org.reqres.ReqResGet@399f45b1]" started-at="2023-05-22T17:12:45 IST" name="beforeMethod" finished-at="2023-05-22T17:12:45 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="listUsers()[pri:0, instance:org.reqres.ReqResGet@399f45b1]" started-at="2023-05-22T17:12:45 IST" name="listUsers" finished-at="2023-05-22T17:12:46 IST" duration-ms="458" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- listUsers -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:org.reqres.ReqResGet@399f45b1]" started-at="2023-05-22T17:12:46 IST" name="beforeMethod" finished-at="2023-05-22T17:12:46 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="singleResourceNotFound()[pri:0, instance:org.reqres.ReqResGet@399f45b1]" started-at="2023-05-22T17:12:46 IST" name="singleResourceNotFound" finished-at="2023-05-22T17:12:46 IST" duration-ms="561" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- singleResourceNotFound -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:org.reqres.ReqResGet@399f45b1]" started-at="2023-05-22T17:12:46 IST" name="beforeMethod" finished-at="2023-05-22T17:12:46 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="singleUser()[pri:0, instance:org.reqres.ReqResGet@399f45b1]" started-at="2023-05-22T17:12:46 IST" name="singleUser" finished-at="2023-05-22T17:12:47 IST" duration-ms="194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- singleUser -->
+        <test-method signature="singleUserNotFound()[pri:0, instance:org.reqres.ReqResGet@399f45b1]" started-at="2023-05-22T17:12:47 IST" name="singleUserNotFound" finished-at="2023-05-22T17:12:47 IST" duration-ms="237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- singleUserNotFound -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:org.reqres.ReqResGet@399f45b1]" started-at="2023-05-22T17:12:47 IST" name="beforeMethod" finished-at="2023-05-22T17:12:47 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+      </class> <!-- org.reqres.ReqResGet -->
+      <class name="org.reqres.ReqResPatch">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:org.reqres.ReqResPatch@6aba2b86]" started-at="2023-05-22T17:12:25 IST" name="beforeMethod" finished-at="2023-05-22T17:12:27 IST" duration-ms="1958" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="update()[pri:0, instance:org.reqres.ReqResPatch@6aba2b86]" started-at="2023-05-22T17:12:27 IST" name="update" finished-at="2023-05-22T17:12:37 IST" duration-ms="9755" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- update -->
+      </class> <!-- org.reqres.ReqResPatch -->
+      <class name="org.reqres.ReqResPut">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:org.reqres.ReqResPut@2d7275fc]" started-at="2023-05-22T17:12:37 IST" name="beforeMethod" finished-at="2023-05-22T17:12:37 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testPut()[pri:0, instance:org.reqres.ReqResPut@2d7275fc]" started-at="2023-05-22T17:12:37 IST" name="testPut" finished-at="2023-05-22T17:12:37 IST" duration-ms="634" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPut -->
+      </class> <!-- org.reqres.ReqResPut -->
+      <class name="org.reqres.ReqResPost">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:org.reqres.ReqResPost@478190fc]" started-at="2023-05-22T17:12:47 IST" name="beforeMethod" finished-at="2023-05-22T17:12:47 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="create()[pri:0, instance:org.reqres.ReqResPost@478190fc]" started-at="2023-05-22T17:12:47 IST" name="create" finished-at="2023-05-22T17:12:48 IST" duration-ms="555" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:org.test.ReqResPost@4d9e68d0]" started-at="2023-05-22T11:47:05 IST" name="beforeMethod" finished-at="2023-05-22T11:47:05 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="loginSuccessful()[pri:0, instance:org.test.ReqResPost@4d9e68d0]" started-at="2023-05-22T11:47:05 IST" name="loginSuccessful" finished-at="2023-05-22T11:47:05 IST" duration-ms="528" status="PASS">
+        <test-method signature="loginSuccessful()[pri:0, instance:org.reqres.ReqResPost@478190fc]" started-at="2023-05-22T17:12:48 IST" name="loginSuccessful" finished-at="2023-05-22T17:12:48 IST" duration-ms="469" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginSuccessful -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:org.test.ReqResPost@4d9e68d0]" started-at="2023-05-22T11:47:05 IST" name="beforeMethod" finished-at="2023-05-22T11:47:05 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:org.reqres.ReqResPost@478190fc]" started-at="2023-05-22T17:12:48 IST" name="beforeMethod" finished-at="2023-05-22T17:12:48 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="loginUnSuccessful()[pri:0, instance:org.test.ReqResPost@4d9e68d0]" started-at="2023-05-22T11:47:05 IST" name="loginUnSuccessful" finished-at="2023-05-22T11:47:06 IST" duration-ms="488" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:org.reqres.ReqResPost@478190fc]" started-at="2023-05-22T17:12:48 IST" name="beforeMethod" finished-at="2023-05-22T17:12:48 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="loginUnSuccessful()[pri:0, instance:org.reqres.ReqResPost@478190fc]" started-at="2023-05-22T17:12:48 IST" name="loginUnSuccessful" finished-at="2023-05-22T17:12:49 IST" duration-ms="911" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginUnSuccessful -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:org.test.ReqResPost@4d9e68d0]" started-at="2023-05-22T11:47:06 IST" name="beforeMethod" finished-at="2023-05-22T11:47:06 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="registerSuccessful()[pri:0, instance:org.test.ReqResPost@4d9e68d0]" started-at="2023-05-22T11:47:06 IST" name="registerSuccessful" finished-at="2023-05-22T11:47:06 IST" duration-ms="433" status="PASS">
+        <test-method signature="registerSuccessful()[pri:0, instance:org.reqres.ReqResPost@478190fc]" started-at="2023-05-22T17:12:49 IST" name="registerSuccessful" finished-at="2023-05-22T17:12:50 IST" duration-ms="497" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerSuccessful -->
-        <test-method signature="registerUnSuccessful()[pri:0, instance:org.test.ReqResPost@4d9e68d0]" started-at="2023-05-22T11:47:06 IST" name="registerUnSuccessful" finished-at="2023-05-22T11:47:07 IST" duration-ms="519" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registerUnSuccessful -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:org.test.ReqResPost@4d9e68d0]" started-at="2023-05-22T11:47:06 IST" name="beforeMethod" finished-at="2023-05-22T11:47:06 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:org.reqres.ReqResPost@478190fc]" started-at="2023-05-22T17:12:49 IST" name="beforeMethod" finished-at="2023-05-22T17:12:49 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-      </class> <!-- org.test.ReqResPost -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:org.reqres.ReqResPost@478190fc]" started-at="2023-05-22T17:12:50 IST" name="beforeMethod" finished-at="2023-05-22T17:12:50 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="registerUnSuccessful()[pri:0, instance:org.reqres.ReqResPost@478190fc]" started-at="2023-05-22T17:12:50 IST" name="registerUnSuccessful" finished-at="2023-05-22T17:12:50 IST" duration-ms="502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerUnSuccessful -->
+      </class> <!-- org.reqres.ReqResPost -->
+    </test> <!-- Test -->
+  </suite> <!-- ReqResSuite -->
 </testng-results>
